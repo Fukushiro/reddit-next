@@ -9,7 +9,6 @@ export const Container = styled.div`
 export const Content = styled.div`
   display: flex;
   width: 100%;
-  background-color: #ff0000;
   @media (${lgMediaMin}) {
     width: 1150px;
   }

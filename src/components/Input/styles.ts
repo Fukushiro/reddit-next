@@ -12,8 +12,7 @@ export const Container = styled.div`
 
   input {
     all: unset;
-    background-color: red;
-    min-width: 0;
+
     ::placeholder {
       color: #86759b;
     }
