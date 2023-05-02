@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div<{ isOpen: boolean }>`
   position: absolute;
+  width: 270px;
   left: 0;
   right: 0;
   height: 482px;

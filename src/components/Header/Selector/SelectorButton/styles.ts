@@ -1,5 +1,9 @@
 import styled from "styled-components";
-import { mdMediaMax, mdMediaMin } from "../../../../utils/responsive";
+import {
+  mdMediaMax,
+  mdMediaMin,
+  smMediaMin,
+} from "../../../../utils/responsive";
 
 export const ButtonContainer = styled.div<{ isActive: boolean }>`
   button {
@@ -22,8 +26,9 @@ export const Button = styled.div`
   padding: 2px 5px;
   height: 30px;
   align-items: center;
+  width: 70px;
   @media (${mdMediaMin}) {
-    width: 268px;
+    width: 200px;
   }
 `;
 
@@ -32,6 +37,12 @@ export const ButtonLeft = styled.div`
   align-items: center;
   justify-content: space-around;
   width: 70px;
+  p {
+    display: none;
+    @media (${mdMediaMin}) {
+      display: block;
+    }
+  }
 `;
 
 export const ButtonRight = styled.div``;

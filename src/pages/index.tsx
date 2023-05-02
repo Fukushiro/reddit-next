@@ -9,6 +9,7 @@ import {
   LeftContent,
   RightContent,
 } from "../styles/index.style";
+import { CreateCommunityCard } from "../components/CreateCommunityCard";
 
 export default function Home() {
   return (
@@ -89,7 +90,9 @@ export default function Home() {
             fix this?`}
             />
           </LeftContent>
-          <RightContent></RightContent>
+          <RightContent>
+            <CreateCommunityCard />
+          </RightContent>
         </Content>
       </Container>
     </div>

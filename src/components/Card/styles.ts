@@ -3,7 +3,7 @@ import { Button } from "../Button";
 
 export const Container = styled.div`
   background-color: white;
-  width: 600px;
+  width: 640px;
   display: flex;
   padding: 5px;
 `;

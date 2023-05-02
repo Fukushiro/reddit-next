@@ -9,9 +9,9 @@ export const Container = styled.div`
 export const Content = styled.div`
   display: flex;
   width: 100%;
-
+  background-color: #ff0000;
   @media (${lgMediaMin}) {
-    width: 2000px;
+    width: 1150px;
   }
 `;
 
@@ -24,7 +24,6 @@ export const LeftContent = styled.div`
   @media (${mdMediaMin}) {
     display: flex;
     flex-direction: column;
-    gap: 15px;
     width: 60%;
   }
 `;
@@ -33,14 +32,16 @@ export const HomeCard = styled(Card)`
   width: 100%;
 
   @media (${lgMediaMin}) {
-    width: 600px;
+    width: 640px;
   }
 `;
 
 export const RightContent = styled.div`
   display: none;
   @media (${mdMediaMin}) {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     width: 40%;
   }

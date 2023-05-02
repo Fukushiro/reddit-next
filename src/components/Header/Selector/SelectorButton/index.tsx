@@ -7,8 +7,7 @@ interface SelectorButtonProps {
   isActive: boolean;
   setIsActive: (val: boolean) => void;
 }
-export function SelectorButton({isActive,setIsActive}: SelectorButtonProps) {
-  
+export function SelectorButton({ isActive, setIsActive }: SelectorButtonProps) {
   return (
     <ButtonContainer isActive={isActive}>
       <Clickable
@@ -19,7 +18,7 @@ export function SelectorButton({isActive,setIsActive}: SelectorButtonProps) {
         <Button>
           <ButtonLeft>
             <BsFillArrowUpRightCircleFill />
-            Popular
+            <p>Popular</p>
           </ButtonLeft>
           <ButtonRight>
             <IoIosArrowDown />
