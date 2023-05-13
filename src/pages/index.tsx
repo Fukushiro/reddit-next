@@ -10,8 +10,19 @@ import {
   RightContent,
 } from "../styles/index.style";
 import { CreateCommunityCard } from "../components/CreateCommunityCard";
+import { useEffect } from "react";
+import { getPosts } from "../services/api/post.api";
 
 export default function Home() {
+  //useState
+  useEffect(() => {
+    async function start() {
+      const { data } = await getPosts();
+      console.log(data);
+    }
+    start();
+  }, []);
+
   return (
     <div>
       <Header />
