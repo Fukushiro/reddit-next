@@ -4,4 +4,5 @@ export interface PostData {
   title: string;
   upvotes: number;
   date: string;
+  subredditId: number;
 }
